@@ -6,7 +6,7 @@ CREATE TABLE cats (
     breed_id INT
 );
 COPY cats
-FROM $str$/code/data/cats.csv$str$
+FROM $str$/code/data/cats.csv$str$ -- /code is used by the docker so it's needed
 DELIMITER ',' CSV HEADER;
 
 
